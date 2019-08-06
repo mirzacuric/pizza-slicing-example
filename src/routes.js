@@ -8,7 +8,7 @@ const pizzaController = new PizzaController();
 const schemas = {
   points: Joi.array().items(
     Joi.array().items(Joi.number().min(0))
-  ).min(2).max(1000)
+  ).min(2).max(200)
 }
 
 const router = Router();
